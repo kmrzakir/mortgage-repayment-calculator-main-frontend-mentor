@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <main>
+      <!-- left section -->
+      <section class="left_section">
+        <!-- header part -->
+        <header>
+          <h2>Mortgage calculator</h2>
+          <p>Clear All</p>
+        </header>
+        <!-- Mortgage Amount -->
+        <section class="mortage_amount primary_section">
+          <label for="">Mortgage Amount</label>
+          <div>
+            <p>&#8377</p>
+            <input type="number" />
+          </div>
+          <p class="error">This filed is required</p>
+        </section>
+        <!-- Mortgage term and intrest rate -->
+         <section class="mortage_and_rate">
+          <!-- Mortgage term -->
+             <section class="primary_section">
+              <label for="">Mortgage Term</label>
+              <div>
+                <input type="number">
+                <p>years</p>
+              </div>
+              <p class="error">This filed is required</p>
+             </section>
+             <!-- intrestt rate -->
+          <section class="primary_section">
+            <label for="">Interest Rate</label>
+            <div>
+              <input type="number">
+              <p>%</p>
+            </div>
+            <p class="error">This filed is required</p>
+          </section>
+         </section>
+         <!-- Mortgage Type -->
+          <section class="mortagage_type primary_section">
+            <label for="">Mortgage Type</label>
+            <div>
+              <input type="radio" name="radio1">
+              <label for="">Repayment</label>
+            </div>
+            <div>
+              <input type="radio" name="radio1">
+              <label for="">Interest Only</label>
+            </div>
+            <p class="error">This filed is required</p>
+          </section>
+          <!-- calculate repayments buttion -->
+           <button id="calculate_btn">
+            <img src="./assets/images/icon-calculator.svg" alt="">
+            Calculate Repayments
+           </button>
+      </section>
+
+      <!-- right section -->
+      <section class="right_section">
+        <!-- on result -->
+         <section class="on_result">
+          <h2>Your results</h2>
+          <p>Your results are shown belwo based on the information you provided. To adjust the results, edit the form and click "calculate repayments" agian</p>
+          <div>
+            <p>Your monthly repayments</p>
+            <h1>&#8377 1,2234</h1>
+            <hr>
+            <p>Total you'll repay over the term</p>
+            <h2>&#8377 376,5435</h2>
+          </div>
+         </section>
+         <!-- by default -->
+          <section class="by_default">
+            <img src="./assets/images/illustration-empty.svg" alt="">
+            <h2>Results shown here</h2>
+            <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+          </section>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
