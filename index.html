@@ -26,34 +26,34 @@
         <!-- header part -->
         <header>
           <h2>Mortgage calculator</h2>
-          <p>Clear All</p>
+          <p id="clear_all">Clear All</p>
         </header>
         <!-- Mortgage Amount -->
         <section class="mortage_amount primary_section">
           <label for="">Mortgage Amount</label>
-          <div>
-            <p>&#8377</p>
-            <input type="number" />
+          <div class="input_containers">
+            <p class="symbol">&#8377</p>
+            <input type="number" id="amount" class="input_field"/>
           </div>
-          <p class="error">This filed is required</p>
+          <p class="error" id="error1">This filed is required</p>
         </section>
         <!-- Mortgage term and intrest rate -->
          <section class="mortage_and_rate">
           <!-- Mortgage term -->
              <section class="primary_section">
               <label for="">Mortgage Term</label>
-              <div>
-                <input type="number">
-                <p>years</p>
+              <div class="input_containers">
+                <input type="number" class="input_field">
+                <p class="symbol">years</p>
               </div>
               <p class="error">This filed is required</p>
              </section>
              <!-- intrestt rate -->
           <section class="primary_section">
             <label for="">Interest Rate</label>
-            <div>
-              <input type="number">
-              <p>%</p>
+            <div class="input_containers">
+              <input type="number" class="input_field">
+              <p class="symbol">%</p>
             </div>
             <p class="error">This filed is required</p>
           </section>
@@ -61,13 +61,13 @@
          <!-- Mortgage Type -->
           <section class="mortagage_type primary_section">
             <label for="">Mortgage Type</label>
-            <div>
-              <input type="radio" name="radio1">
-              <label for="">Repayment</label>
+            <div class="radio_containers">
+              <input type="radio" name="radio1" id="repayment_radio" value="Repayment">
+              <label for="repayment_radio">Repayment</label>
             </div>
-            <div>
-              <input type="radio" name="radio1">
-              <label for="">Interest Only</label>
+            <div class="radio_containers">
+              <input type="radio" name="radio1" id="intrest_only_radio" value="Interest Only">
+              <label for="intrest_only_radio">Interest Only</label>
             </div>
             <p class="error">This filed is required</p>
           </section>
@@ -86,10 +86,10 @@
           <p>Your results are shown belwo based on the information you provided. To adjust the results, edit the form and click "calculate repayments" agian</p>
           <div>
             <p>Your monthly repayments</p>
-            <h1>&#8377 1,2234</h1>
+            <h1 id="monthly_repayments">&#8377 1,2234</h1>
             <hr>
             <p>Total you'll repay over the term</p>
-            <h2>&#8377 376,5435</h2>
+            <h2 id="total_repayments">&#8377 376,5435</h2>
           </div>
          </section>
          <!-- by default -->
